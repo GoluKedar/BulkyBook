@@ -9,7 +9,7 @@ namespace BulkyBookWeb.Models
         [Required]
         public string Name { get; set; }
         [Display(Name = "Display Order")]
-        [Range(1,100)]
+        [Range(1,100,ErrorMessage ="Display order must be between 1 and 100 only!!")]
         public int DisplayOrder { get; set; }
         public DateTime CreatedDateTime { get; set; } = DateTime.Now;
     }
